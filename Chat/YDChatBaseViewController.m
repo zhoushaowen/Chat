@@ -11,7 +11,7 @@
 #import "UIViewController+Authorization.h"
 #import <AVFoundation/AVFoundation.h>
 #import "YDTextMessageCell.h"
-#import "YDTextMessage.h"
+#import "YDBaseMessage.h"
 #import <objc/runtime.h>
 
 extern CGFloat const YDKeyboardHeight;
@@ -22,7 +22,10 @@ UITableViewDelegate,
 UITableViewDataSource,
 YDChatBottomToolViewDelegate,
 UIGestureRecognizerDelegate,
-UITableViewDataSourcePrefetching>
+UITableViewDataSourcePrefetching,
+UIImagePickerControllerDelegate,
+UINavigationControllerDelegate
+>
 {
     UITableView *_tableView;
     YDChatBottomToolView *_bottomToolView;
@@ -207,6 +210,7 @@ UITableViewDataSourcePrefetching>
         if(![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary])return;
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.delegate = self;
         [self presentViewController:picker animated:YES completion:nil];
         
     }else if([item.titleName isEqualToString:@"拍照"])
@@ -217,11 +221,31 @@ UITableViewDataSourcePrefetching>
             return;
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        picker.delegate = self;
         [self presentViewController:picker animated:YES completion:nil];
     }else if([item.titleName isEqualToString:@"定位"])
     {
         
     }
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    UIImage *orignalImage = info[UIImagePickerControllerOriginalImage];
+    CGFloat scale = orignalImage.size.height/orignalImage.size.width;
+    CGRect rect = CGRectMake(0, 0, 500, 500*scale);
+    UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0);
+    [orignalImage drawInRect:rect];
+    UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [self chatImagePickerControllerDidFinishPickingImage:resultImage];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -292,6 +316,8 @@ UITableViewDataSourcePrefetching>
     NSString *cellClassName = [NSString stringWithCString:messageClassCString encoding:NSUTF8StringEncoding];
     [_tableView registerClass:cellClass forCellReuseIdentifier:[cellClassName stringByAppendingString:@"-YDChatCell"]];
 }
+
+- (void)chatImagePickerControllerDidFinishPickingImage:(UIImage *)image{}
 
 - (NSCache *)registerClass
 {

@@ -48,6 +48,7 @@
 
 - (void)sendMessageButtonClick:(NSString *)text;
 - (void)chatBottomToolView:(YDChatBottomToolView *)toolView actionItemClick:(id<YDActionItemProtocol>)item;
+- (void)chatImagePickerControllerDidFinishPickingImage:(UIImage *)image;
 
 @end
 

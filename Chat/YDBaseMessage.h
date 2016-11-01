@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YDTextMessage : NSObject
+@interface YDBaseMessage : NSObject
 
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *content;

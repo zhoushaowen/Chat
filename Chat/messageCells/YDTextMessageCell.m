@@ -7,7 +7,7 @@
 //
 
 #import "YDTextMessageCell.h"
-#import "YDTextMessage.h"
+#import "YDBaseMessage.h"
 
 @interface YDTextMessageCell()
 @property (nonatomic,strong) UILabel *contentLab;
@@ -43,7 +43,7 @@
 - (void)setContentModel:(id)contentModel
 {
     [super setContentModel:contentModel];
-    YDTextMessage *message = contentModel;
+    YDBaseMessage *message = contentModel;
     
     self.isTime = message.isDisplayTime;
     self.isSender = !message.isReceiver;

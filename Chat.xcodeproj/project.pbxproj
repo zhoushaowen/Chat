@@ -26,7 +26,7 @@
 		362EE29E1DC6E31800081B54 /* chat_from_bg_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362EE29D1DC6E31800081B54 /* chat_from_bg_normal@2x.png */; };
 		362EE2A01DC6E32000081B54 /* chat_to_bg_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362EE29F1DC6E32000081B54 /* chat_to_bg_normal@2x.png */; };
 		362EE2A31DC71D3B00081B54 /* YDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EE2A21DC71D3B00081B54 /* YDChatViewController.m */; };
-		362EE2A61DC74C6B00081B54 /* YDTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EE2A51DC74C6B00081B54 /* YDTextMessage.m */; };
+		362EE2A61DC74C6B00081B54 /* YDBaseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EE2A51DC74C6B00081B54 /* YDBaseMessage.m */; };
 		36331D041DC0A281009B3AC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36331D031DC0A281009B3AC4 /* MBProgressHUD.m */; };
 		36331D071DC0A2DD009B3AC4 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36331D061DC0A2DD009B3AC4 /* UIView+HUD.m */; };
 		36331D0A1DC0A5F9009B3AC4 /* YDRecordingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36331D091DC0A5F9009B3AC4 /* YDRecordingView.m */; };
@@ -39,6 +39,7 @@
 		36C807BB1DC83C1200D68BC3 /* UIViewController+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */; };
 		36C807BF1DC8672A00D68BC3 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36C807BE1DC8672A00D68BC3 /* emotion.plist */; };
 		36C807C21DC86B2A00D68BC3 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C807C11DC86B2A00D68BC3 /* NSString+Emoji.m */; };
+		36C807C91DC877F700D68BC3 /* YDImageMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C807C81DC877F700D68BC3 /* YDImageMessage.m */; };
 		B13FDFC5209E4D0523373138 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D686D7E9CF60BED953363FAF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,15 +70,15 @@
 		361EC5AF1DBE1D2B0064FB18 /* YDChatPlusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatPlusView.h; sourceTree = "<group>"; };
 		361EC5B01DBE1D2B0064FB18 /* YDChatPlusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDChatPlusView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		362EE2971DC6DECE00081B54 /* YDTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTextMessageCell.h; sourceTree = "<group>"; };
-		362EE2981DC6DECE00081B54 /* YDTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTextMessageCell.m; sourceTree = "<group>"; };
+		362EE2981DC6DECE00081B54 /* YDTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDTextMessageCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		362EE29A1DC6DEED00081B54 /* YDMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMessageCell.h; sourceTree = "<group>"; };
 		362EE29B1DC6DEED00081B54 /* YDMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMessageCell.m; sourceTree = "<group>"; };
 		362EE29D1DC6E31800081B54 /* chat_from_bg_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_from_bg_normal@2x.png"; sourceTree = "<group>"; };
 		362EE29F1DC6E32000081B54 /* chat_to_bg_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_to_bg_normal@2x.png"; sourceTree = "<group>"; };
 		362EE2A11DC71D3B00081B54 /* YDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatViewController.h; sourceTree = "<group>"; };
-		362EE2A21DC71D3B00081B54 /* YDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChatViewController.m; sourceTree = "<group>"; };
-		362EE2A41DC74C6B00081B54 /* YDTextMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTextMessage.h; sourceTree = "<group>"; };
-		362EE2A51DC74C6B00081B54 /* YDTextMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTextMessage.m; sourceTree = "<group>"; };
+		362EE2A21DC71D3B00081B54 /* YDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDChatViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		362EE2A41DC74C6B00081B54 /* YDBaseMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = YDBaseMessage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		362EE2A51DC74C6B00081B54 /* YDBaseMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDBaseMessage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		36331D021DC0A281009B3AC4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		36331D031DC0A281009B3AC4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		36331D051DC0A2DD009B3AC4 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
@@ -100,6 +101,8 @@
 		36C807BE1DC8672A00D68BC3 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
 		36C807C01DC86B2A00D68BC3 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		36C807C11DC86B2A00D68BC3 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		36C807C71DC877F700D68BC3 /* YDImageMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDImageMessage.h; sourceTree = "<group>"; };
+		36C807C81DC877F700D68BC3 /* YDImageMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDImageMessage.m; sourceTree = "<group>"; };
 		7B2792C0070125173AE8B81A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D8C79F1177E017DD484323F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D686D7E9CF60BED953363FAF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,43 +149,15 @@
 				361EC5891DBDE37D0064FB18 /* YDChatBaseViewController.m */,
 				362EE2A11DC71D3B00081B54 /* YDChatViewController.h */,
 				362EE2A21DC71D3B00081B54 /* YDChatViewController.m */,
-				362EE2A41DC74C6B00081B54 /* YDTextMessage.h */,
-				362EE2A51DC74C6B00081B54 /* YDTextMessage.m */,
-				361EC5991DBDE3AF0064FB18 /* YDChatBottomToolView.h */,
-				361EC59A1DBDE3AF0064FB18 /* YDChatBottomToolView.m */,
-				36331D081DC0A5F9009B3AC4 /* YDRecordingView.h */,
-				36331D091DC0A5F9009B3AC4 /* YDRecordingView.m */,
-				36331D0B1DC0B6E3009B3AC4 /* YDCancelSendView.h */,
-				36331D0C1DC0B6E3009B3AC4 /* YDCancelSendView.m */,
-				3649662C1DC1917400E699CC /* YDAudioPressShortView.h */,
-				3649662D1DC1917400E699CC /* YDAudioPressShortView.m */,
-				36331D051DC0A2DD009B3AC4 /* UIView+HUD.h */,
-				36331D061DC0A2DD009B3AC4 /* UIView+HUD.m */,
-				36C807C01DC86B2A00D68BC3 /* NSString+Emoji.h */,
-				36C807C11DC86B2A00D68BC3 /* NSString+Emoji.m */,
-				361EC5A31DBDFD7F0064FB18 /* YDEmojiKeyboardView.h */,
-				361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */,
-				361EC5A61DBDFE480064FB18 /* YDEmojiKeyboardCell.h */,
-				361EC5A71DBDFE480064FB18 /* YDEmojiKeyboardCell.m */,
-				361EC5AF1DBE1D2B0064FB18 /* YDChatPlusView.h */,
-				361EC5B01DBE1D2B0064FB18 /* YDChatPlusView.m */,
+				362EE2A41DC74C6B00081B54 /* YDBaseMessage.h */,
+				362EE2A51DC74C6B00081B54 /* YDBaseMessage.m */,
+				36C807C71DC877F700D68BC3 /* YDImageMessage.h */,
+				36C807C81DC877F700D68BC3 /* YDImageMessage.m */,
+				36C807C31DC8762300D68BC3 /* Views */,
 				36912FC11DBEFCDE00797451 /* YDActionItemProtocol.h */,
-				36912FBE1DBEF43200797451 /* YDPlusViewModel.h */,
-				36912FBF1DBEF43200797451 /* YDPlusViewModel.m */,
-				361EC59E1DBDE5870064FB18 /* UIImage+Bundle.h */,
-				361EC59F1DBDE5870064FB18 /* UIImage+Bundle.m */,
-				36912FCB1DBF5D3200797451 /* UIImage+Color.h */,
-				36912FCC1DBF5D3200797451 /* UIImage+Color.m */,
-				361EC5AC1DBE00060064FB18 /* UIView+SWAutoLayout.h */,
-				361EC5AD1DBE00060064FB18 /* UIView+SWAutoLayout.m */,
-				36C807B91DC83C1200D68BC3 /* UIViewController+Authorization.h */,
-				36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */,
-				361EC5A91DBDFE8D0064FB18 /* UIColor+Hex.h */,
-				361EC5AA1DBDFE8D0064FB18 /* UIColor+Hex.m */,
-				36912FC71DBF56B600797451 /* chat_delete@2x.png */,
-				36912FC81DBF56B600797451 /* chat_delete@3x.png */,
-				36C807BE1DC8672A00D68BC3 /* emotion.plist */,
-				361EC59C1DBDE3BE0064FB18 /* chat.bundle */,
+				36C807C61DC877B700D68BC3 /* Model */,
+				36C807C41DC8764700D68BC3 /* Extension */,
+				36C807C51DC8766400D68BC3 /* Source */,
 				361EC58B1DBDE37D0064FB18 /* Main.storyboard */,
 				361EC58E1DBDE37D0064FB18 /* Assets.xcassets */,
 				361EC5901DBDE37D0064FB18 /* LaunchScreen.storyboard */,
@@ -220,6 +195,68 @@
 				36331D031DC0A281009B3AC4 /* MBProgressHUD.m */,
 			);
 			name = ThirdSupport;
+			sourceTree = "<group>";
+		};
+		36C807C31DC8762300D68BC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				361EC5991DBDE3AF0064FB18 /* YDChatBottomToolView.h */,
+				361EC59A1DBDE3AF0064FB18 /* YDChatBottomToolView.m */,
+				36331D081DC0A5F9009B3AC4 /* YDRecordingView.h */,
+				36331D091DC0A5F9009B3AC4 /* YDRecordingView.m */,
+				36331D0B1DC0B6E3009B3AC4 /* YDCancelSendView.h */,
+				36331D0C1DC0B6E3009B3AC4 /* YDCancelSendView.m */,
+				3649662C1DC1917400E699CC /* YDAudioPressShortView.h */,
+				3649662D1DC1917400E699CC /* YDAudioPressShortView.m */,
+				361EC5A31DBDFD7F0064FB18 /* YDEmojiKeyboardView.h */,
+				361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */,
+				361EC5A61DBDFE480064FB18 /* YDEmojiKeyboardCell.h */,
+				361EC5A71DBDFE480064FB18 /* YDEmojiKeyboardCell.m */,
+				361EC5AF1DBE1D2B0064FB18 /* YDChatPlusView.h */,
+				361EC5B01DBE1D2B0064FB18 /* YDChatPlusView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		36C807C41DC8764700D68BC3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				36331D051DC0A2DD009B3AC4 /* UIView+HUD.h */,
+				36331D061DC0A2DD009B3AC4 /* UIView+HUD.m */,
+				36C807C01DC86B2A00D68BC3 /* NSString+Emoji.h */,
+				36C807C11DC86B2A00D68BC3 /* NSString+Emoji.m */,
+				361EC59E1DBDE5870064FB18 /* UIImage+Bundle.h */,
+				361EC59F1DBDE5870064FB18 /* UIImage+Bundle.m */,
+				36912FCB1DBF5D3200797451 /* UIImage+Color.h */,
+				36912FCC1DBF5D3200797451 /* UIImage+Color.m */,
+				361EC5AC1DBE00060064FB18 /* UIView+SWAutoLayout.h */,
+				361EC5AD1DBE00060064FB18 /* UIView+SWAutoLayout.m */,
+				36C807B91DC83C1200D68BC3 /* UIViewController+Authorization.h */,
+				36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */,
+				361EC5A91DBDFE8D0064FB18 /* UIColor+Hex.h */,
+				361EC5AA1DBDFE8D0064FB18 /* UIColor+Hex.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		36C807C51DC8766400D68BC3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				36912FC71DBF56B600797451 /* chat_delete@2x.png */,
+				36912FC81DBF56B600797451 /* chat_delete@3x.png */,
+				36C807BE1DC8672A00D68BC3 /* emotion.plist */,
+				361EC59C1DBDE3BE0064FB18 /* chat.bundle */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		36C807C61DC877B700D68BC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36912FBE1DBEF43200797451 /* YDPlusViewModel.h */,
+				36912FBF1DBEF43200797451 /* YDPlusViewModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		AB7766791C16613B5040E27B /* Frameworks */ = {
@@ -368,13 +405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C807C91DC877F700D68BC3 /* YDImageMessage.m in Sources */,
 				36331D071DC0A2DD009B3AC4 /* UIView+HUD.m in Sources */,
 				361EC5AE1DBE00060064FB18 /* UIView+SWAutoLayout.m in Sources */,
 				36912FC01DBEF43200797451 /* YDPlusViewModel.m in Sources */,
 				361EC5A51DBDFD7F0064FB18 /* YDEmojiKeyboardView.m in Sources */,
 				361EC5A01DBDE5870064FB18 /* UIImage+Bundle.m in Sources */,
 				36C807C21DC86B2A00D68BC3 /* NSString+Emoji.m in Sources */,
-				362EE2A61DC74C6B00081B54 /* YDTextMessage.m in Sources */,
+				362EE2A61DC74C6B00081B54 /* YDBaseMessage.m in Sources */,
 				362EE29C1DC6DEED00081B54 /* YDMessageCell.m in Sources */,
 				3649662E1DC1917400E699CC /* YDAudioPressShortView.m in Sources */,
 				36C807BB1DC83C1200D68BC3 /* UIViewController+Authorization.m in Sources */,

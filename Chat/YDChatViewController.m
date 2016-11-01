@@ -8,7 +8,7 @@
 
 #import "YDChatViewController.h"
 #import "YDTextMessageCell.h"
-#import "YDTextMessage.h"
+#import "YDBaseMessage.h"
 
 @interface YDChatViewController ()
 
@@ -18,11 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self registerMessageClass:[YDTextMessage class] forCellClass:[YDTextMessageCell class]];
+    [self registerMessageClass:[YDBaseMessage class] forCellClass:[YDTextMessageCell class]];
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:0];
     for(int i = 0;i<20;i++)
     {
-        YDTextMessage *message = [YDTextMessage new];
+        YDBaseMessage *message = [YDBaseMessage new];
         message.content = @"啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈";
         message.name = @"张三";
         [arr addObject:message];
@@ -30,11 +30,18 @@
     [self setDataArray:arr];
 }
 
-
+#pragma mark - Override
 - (void)sendMessageButtonClick:(NSString *)text
 {
-    YDTextMessage *message = [YDTextMessage new];
+    YDBaseMessage *message = [YDBaseMessage new];
     message.content = text;
+    message.name = @"李四";
+    [self addMessage:message];
+}
+
+- (void)chatImagePickerControllerDidFinishPickingImage:(UIImage *)image
+{
+    YDBaseMessage *message = [YDBaseMessage new];
     message.name = @"李四";
     [self addMessage:message];
 }
