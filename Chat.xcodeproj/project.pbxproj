@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		361EC5841DBDE37D0064FB18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5831DBDE37D0064FB18 /* main.m */; };
+		361EC5871DBDE37D0064FB18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5861DBDE37D0064FB18 /* AppDelegate.m */; };
+		361EC58A1DBDE37D0064FB18 /* YDChatBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5891DBDE37D0064FB18 /* YDChatBaseViewController.m */; };
+		361EC58D1DBDE37D0064FB18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361EC58B1DBDE37D0064FB18 /* Main.storyboard */; };
+		361EC58F1DBDE37D0064FB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361EC58E1DBDE37D0064FB18 /* Assets.xcassets */; };
+		361EC5921DBDE37D0064FB18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361EC5901DBDE37D0064FB18 /* LaunchScreen.storyboard */; };
+		361EC59B1DBDE3AF0064FB18 /* YDChatBottomToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC59A1DBDE3AF0064FB18 /* YDChatBottomToolView.m */; };
+		361EC59D1DBDE3BE0064FB18 /* chat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 361EC59C1DBDE3BE0064FB18 /* chat.bundle */; };
+		361EC5A01DBDE5870064FB18 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC59F1DBDE5870064FB18 /* UIImage+Bundle.m */; };
+		361EC5A21DBDFCB60064FB18 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 361EC5A11DBDFCB60064FB18 /* emoji.plist */; };
+		361EC5A51DBDFD7F0064FB18 /* YDEmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */; };
+		361EC5A81DBDFE480064FB18 /* YDEmojiKeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5A71DBDFE480064FB18 /* YDEmojiKeyboardCell.m */; };
+		361EC5AB1DBDFE8D0064FB18 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5AA1DBDFE8D0064FB18 /* UIColor+Hex.m */; };
+		361EC5AE1DBE00060064FB18 /* UIView+SWAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5AD1DBE00060064FB18 /* UIView+SWAutoLayout.m */; };
+		361EC5B11DBE1D2B0064FB18 /* YDChatPlusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5B01DBE1D2B0064FB18 /* YDChatPlusView.m */; };
+		362EE2991DC6DECE00081B54 /* YDTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EE2981DC6DECE00081B54 /* YDTextMessageCell.m */; };
+		362EE29C1DC6DEED00081B54 /* YDMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EE29B1DC6DEED00081B54 /* YDMessageCell.m */; };
+		362EE29E1DC6E31800081B54 /* chat_from_bg_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362EE29D1DC6E31800081B54 /* chat_from_bg_normal@2x.png */; };
+		362EE2A01DC6E32000081B54 /* chat_to_bg_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362EE29F1DC6E32000081B54 /* chat_to_bg_normal@2x.png */; };
+		362EE2A31DC71D3B00081B54 /* YDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EE2A21DC71D3B00081B54 /* YDChatViewController.m */; };
+		362EE2A61DC74C6B00081B54 /* YDTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EE2A51DC74C6B00081B54 /* YDTextMessage.m */; };
+		36331D041DC0A281009B3AC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36331D031DC0A281009B3AC4 /* MBProgressHUD.m */; };
+		36331D071DC0A2DD009B3AC4 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36331D061DC0A2DD009B3AC4 /* UIView+HUD.m */; };
+		36331D0A1DC0A5F9009B3AC4 /* YDRecordingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36331D091DC0A5F9009B3AC4 /* YDRecordingView.m */; };
+		36331D0D1DC0B6E3009B3AC4 /* YDCancelSendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36331D0C1DC0B6E3009B3AC4 /* YDCancelSendView.m */; };
+		3649662E1DC1917400E699CC /* YDAudioPressShortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3649662D1DC1917400E699CC /* YDAudioPressShortView.m */; };
+		36912FC01DBEF43200797451 /* YDPlusViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36912FBF1DBEF43200797451 /* YDPlusViewModel.m */; };
+		36912FC91DBF56B600797451 /* chat_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36912FC71DBF56B600797451 /* chat_delete@2x.png */; };
+		36912FCA1DBF56B600797451 /* chat_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36912FC81DBF56B600797451 /* chat_delete@3x.png */; };
+		36912FCD1DBF5D3200797451 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 36912FCC1DBF5D3200797451 /* UIImage+Color.m */; };
+		36C807BB1DC83C1200D68BC3 /* UIViewController+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */; };
+		36C807BF1DC8672A00D68BC3 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36C807BE1DC8672A00D68BC3 /* emotion.plist */; };
+		B13FDFC5209E4D0523373138 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D686D7E9CF60BED953363FAF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		361EC57F1DBDE37D0064FB18 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		361EC5831DBDE37D0064FB18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		361EC5851DBDE37D0064FB18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		361EC5861DBDE37D0064FB18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		361EC5881DBDE37D0064FB18 /* YDChatBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDChatBaseViewController.h; sourceTree = "<group>"; };
+		361EC5891DBDE37D0064FB18 /* YDChatBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDChatBaseViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		361EC58C1DBDE37D0064FB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		361EC58E1DBDE37D0064FB18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		361EC5911DBDE37D0064FB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		361EC5931DBDE37D0064FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361EC5991DBDE3AF0064FB18 /* YDChatBottomToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatBottomToolView.h; sourceTree = "<group>"; };
+		361EC59A1DBDE3AF0064FB18 /* YDChatBottomToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDChatBottomToolView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		361EC59C1DBDE3BE0064FB18 /* chat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = chat.bundle; sourceTree = "<group>"; };
+		361EC59E1DBDE5870064FB18 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
+		361EC59F1DBDE5870064FB18 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
+		361EC5A11DBDFCB60064FB18 /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
+		361EC5A31DBDFD7F0064FB18 /* YDEmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDEmojiKeyboardView.h; sourceTree = "<group>"; };
+		361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDEmojiKeyboardView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		361EC5A61DBDFE480064FB18 /* YDEmojiKeyboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDEmojiKeyboardCell.h; sourceTree = "<group>"; };
+		361EC5A71DBDFE480064FB18 /* YDEmojiKeyboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDEmojiKeyboardCell.m; sourceTree = "<group>"; };
+		361EC5A91DBDFE8D0064FB18 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		361EC5AA1DBDFE8D0064FB18 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		361EC5AC1DBE00060064FB18 /* UIView+SWAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIView+SWAutoLayout.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		361EC5AD1DBE00060064FB18 /* UIView+SWAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIView+SWAutoLayout.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		361EC5AF1DBE1D2B0064FB18 /* YDChatPlusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatPlusView.h; sourceTree = "<group>"; };
+		361EC5B01DBE1D2B0064FB18 /* YDChatPlusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDChatPlusView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		362EE2971DC6DECE00081B54 /* YDTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTextMessageCell.h; sourceTree = "<group>"; };
+		362EE2981DC6DECE00081B54 /* YDTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTextMessageCell.m; sourceTree = "<group>"; };
+		362EE29A1DC6DEED00081B54 /* YDMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMessageCell.h; sourceTree = "<group>"; };
+		362EE29B1DC6DEED00081B54 /* YDMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMessageCell.m; sourceTree = "<group>"; };
+		362EE29D1DC6E31800081B54 /* chat_from_bg_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_from_bg_normal@2x.png"; sourceTree = "<group>"; };
+		362EE29F1DC6E32000081B54 /* chat_to_bg_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_to_bg_normal@2x.png"; sourceTree = "<group>"; };
+		362EE2A11DC71D3B00081B54 /* YDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatViewController.h; sourceTree = "<group>"; };
+		362EE2A21DC71D3B00081B54 /* YDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChatViewController.m; sourceTree = "<group>"; };
+		362EE2A41DC74C6B00081B54 /* YDTextMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTextMessage.h; sourceTree = "<group>"; };
+		362EE2A51DC74C6B00081B54 /* YDTextMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTextMessage.m; sourceTree = "<group>"; };
+		36331D021DC0A281009B3AC4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		36331D031DC0A281009B3AC4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		36331D051DC0A2DD009B3AC4 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		36331D061DC0A2DD009B3AC4 /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		36331D081DC0A5F9009B3AC4 /* YDRecordingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRecordingView.h; sourceTree = "<group>"; };
+		36331D091DC0A5F9009B3AC4 /* YDRecordingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRecordingView.m; sourceTree = "<group>"; };
+		36331D0B1DC0B6E3009B3AC4 /* YDCancelSendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCancelSendView.h; sourceTree = "<group>"; };
+		36331D0C1DC0B6E3009B3AC4 /* YDCancelSendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDCancelSendView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3649662C1DC1917400E699CC /* YDAudioPressShortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioPressShortView.h; sourceTree = "<group>"; };
+		3649662D1DC1917400E699CC /* YDAudioPressShortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioPressShortView.m; sourceTree = "<group>"; };
+		36912FBE1DBEF43200797451 /* YDPlusViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPlusViewModel.h; sourceTree = "<group>"; };
+		36912FBF1DBEF43200797451 /* YDPlusViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPlusViewModel.m; sourceTree = "<group>"; };
+		36912FC11DBEFCDE00797451 /* YDActionItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDActionItemProtocol.h; sourceTree = "<group>"; };
+		36912FC71DBF56B600797451 /* chat_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_delete@2x.png"; sourceTree = "<group>"; };
+		36912FC81DBF56B600797451 /* chat_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_delete@3x.png"; sourceTree = "<group>"; };
+		36912FCB1DBF5D3200797451 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		36912FCC1DBF5D3200797451 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		36C807B91DC83C1200D68BC3 /* UIViewController+Authorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Authorization.h"; sourceTree = "<group>"; };
+		36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Authorization.m"; sourceTree = "<group>"; };
+		36C807BE1DC8672A00D68BC3 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
+		7B2792C0070125173AE8B81A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9D8C79F1177E017DD484323F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D686D7E9CF60BED953363FAF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		361EC57C1DBDE37D0064FB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13FDFC5209E4D0523373138 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		361EC5761DBDE37D0064FB18 = {
+			isa = PBXGroup;
+			children = (
+				361EC5811DBDE37D0064FB18 /* Chat */,
+				361EC5801DBDE37D0064FB18 /* Products */,
+				BB68E5947342C7A3FCCD36A1 /* Pods */,
+				AB7766791C16613B5040E27B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		361EC5801DBDE37D0064FB18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				361EC57F1DBDE37D0064FB18 /* Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		361EC5811DBDE37D0064FB18 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				362EE2961DC6DEA900081B54 /* messageCells */,
+				36331D011DC0A269009B3AC4 /* ThirdSupport */,
+				361EC5851DBDE37D0064FB18 /* AppDelegate.h */,
+				361EC5861DBDE37D0064FB18 /* AppDelegate.m */,
+				361EC5881DBDE37D0064FB18 /* YDChatBaseViewController.h */,
+				361EC5891DBDE37D0064FB18 /* YDChatBaseViewController.m */,
+				362EE2A11DC71D3B00081B54 /* YDChatViewController.h */,
+				362EE2A21DC71D3B00081B54 /* YDChatViewController.m */,
+				362EE2A41DC74C6B00081B54 /* YDTextMessage.h */,
+				362EE2A51DC74C6B00081B54 /* YDTextMessage.m */,
+				361EC5991DBDE3AF0064FB18 /* YDChatBottomToolView.h */,
+				361EC59A1DBDE3AF0064FB18 /* YDChatBottomToolView.m */,
+				36331D081DC0A5F9009B3AC4 /* YDRecordingView.h */,
+				36331D091DC0A5F9009B3AC4 /* YDRecordingView.m */,
+				36331D0B1DC0B6E3009B3AC4 /* YDCancelSendView.h */,
+				36331D0C1DC0B6E3009B3AC4 /* YDCancelSendView.m */,
+				3649662C1DC1917400E699CC /* YDAudioPressShortView.h */,
+				3649662D1DC1917400E699CC /* YDAudioPressShortView.m */,
+				36331D051DC0A2DD009B3AC4 /* UIView+HUD.h */,
+				36331D061DC0A2DD009B3AC4 /* UIView+HUD.m */,
+				361EC5A31DBDFD7F0064FB18 /* YDEmojiKeyboardView.h */,
+				361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */,
+				361EC5A61DBDFE480064FB18 /* YDEmojiKeyboardCell.h */,
+				361EC5A71DBDFE480064FB18 /* YDEmojiKeyboardCell.m */,
+				361EC5AF1DBE1D2B0064FB18 /* YDChatPlusView.h */,
+				361EC5B01DBE1D2B0064FB18 /* YDChatPlusView.m */,
+				36912FC11DBEFCDE00797451 /* YDActionItemProtocol.h */,
+				36912FBE1DBEF43200797451 /* YDPlusViewModel.h */,
+				36912FBF1DBEF43200797451 /* YDPlusViewModel.m */,
+				361EC59E1DBDE5870064FB18 /* UIImage+Bundle.h */,
+				361EC59F1DBDE5870064FB18 /* UIImage+Bundle.m */,
+				36912FCB1DBF5D3200797451 /* UIImage+Color.h */,
+				36912FCC1DBF5D3200797451 /* UIImage+Color.m */,
+				361EC5AC1DBE00060064FB18 /* UIView+SWAutoLayout.h */,
+				361EC5AD1DBE00060064FB18 /* UIView+SWAutoLayout.m */,
+				36C807B91DC83C1200D68BC3 /* UIViewController+Authorization.h */,
+				36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */,
+				361EC5A91DBDFE8D0064FB18 /* UIColor+Hex.h */,
+				361EC5AA1DBDFE8D0064FB18 /* UIColor+Hex.m */,
+				36912FC71DBF56B600797451 /* chat_delete@2x.png */,
+				36912FC81DBF56B600797451 /* chat_delete@3x.png */,
+				361EC5A11DBDFCB60064FB18 /* emoji.plist */,
+				36C807BE1DC8672A00D68BC3 /* emotion.plist */,
+				361EC59C1DBDE3BE0064FB18 /* chat.bundle */,
+				361EC58B1DBDE37D0064FB18 /* Main.storyboard */,
+				361EC58E1DBDE37D0064FB18 /* Assets.xcassets */,
+				361EC5901DBDE37D0064FB18 /* LaunchScreen.storyboard */,
+				361EC5931DBDE37D0064FB18 /* Info.plist */,
+				361EC5821DBDE37D0064FB18 /* Supporting Files */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		361EC5821DBDE37D0064FB18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				361EC5831DBDE37D0064FB18 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		362EE2961DC6DEA900081B54 /* messageCells */ = {
+			isa = PBXGroup;
+			children = (
+				362EE29F1DC6E32000081B54 /* chat_to_bg_normal@2x.png */,
+				362EE29D1DC6E31800081B54 /* chat_from_bg_normal@2x.png */,
+				362EE29A1DC6DEED00081B54 /* YDMessageCell.h */,
+				362EE29B1DC6DEED00081B54 /* YDMessageCell.m */,
+				362EE2971DC6DECE00081B54 /* YDTextMessageCell.h */,
+				362EE2981DC6DECE00081B54 /* YDTextMessageCell.m */,
+			);
+			path = messageCells;
+			sourceTree = "<group>";
+		};
+		36331D011DC0A269009B3AC4 /* ThirdSupport */ = {
+			isa = PBXGroup;
+			children = (
+				36331D021DC0A281009B3AC4 /* MBProgressHUD.h */,
+				36331D031DC0A281009B3AC4 /* MBProgressHUD.m */,
+			);
+			name = ThirdSupport;
+			sourceTree = "<group>";
+		};
+		AB7766791C16613B5040E27B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D686D7E9CF60BED953363FAF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB68E5947342C7A3FCCD36A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2792C0070125173AE8B81A /* Pods.debug.xcconfig */,
+				9D8C79F1177E017DD484323F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		361EC57E1DBDE37D0064FB18 /* Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 361EC5961DBDE37D0064FB18 /* Build configuration list for PBXNativeTarget "Chat" */;
+			buildPhases = (
+				182BF0FD20D8BE4961B0499B /* Check Pods Manifest.lock */,
+				361EC57B1DBDE37D0064FB18 /* Sources */,
+				361EC57C1DBDE37D0064FB18 /* Frameworks */,
+				361EC57D1DBDE37D0064FB18 /* Resources */,
+				EF0F4CF5C2CD5CED86D661BC /* Embed Pods Frameworks */,
+				7A0AAB658E08E204D95A97F9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chat;
+			productName = Chat;
+			productReference = 361EC57F1DBDE37D0064FB18 /* Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		361EC5771DBDE37D0064FB18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "周少文";
+				TargetAttributes = {
+					361EC57E1DBDE37D0064FB18 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2YW229246G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 361EC57A1DBDE37D0064FB18 /* Build configuration list for PBXProject "Chat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 361EC5761DBDE37D0064FB18;
+			productRefGroup = 361EC5801DBDE37D0064FB18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				361EC57E1DBDE37D0064FB18 /* Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		361EC57D1DBDE37D0064FB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362EE2A01DC6E32000081B54 /* chat_to_bg_normal@2x.png in Resources */,
+				361EC5921DBDE37D0064FB18 /* LaunchScreen.storyboard in Resources */,
+				36C807BF1DC8672A00D68BC3 /* emotion.plist in Resources */,
+				361EC58F1DBDE37D0064FB18 /* Assets.xcassets in Resources */,
+				362EE29E1DC6E31800081B54 /* chat_from_bg_normal@2x.png in Resources */,
+				361EC58D1DBDE37D0064FB18 /* Main.storyboard in Resources */,
+				36912FCA1DBF56B600797451 /* chat_delete@3x.png in Resources */,
+				36912FC91DBF56B600797451 /* chat_delete@2x.png in Resources */,
+				361EC59D1DBDE3BE0064FB18 /* chat.bundle in Resources */,
+				361EC5A21DBDFCB60064FB18 /* emoji.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		182BF0FD20D8BE4961B0499B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A0AAB658E08E204D95A97F9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0F4CF5C2CD5CED86D661BC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		361EC57B1DBDE37D0064FB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36331D071DC0A2DD009B3AC4 /* UIView+HUD.m in Sources */,
+				361EC5AE1DBE00060064FB18 /* UIView+SWAutoLayout.m in Sources */,
+				36912FC01DBEF43200797451 /* YDPlusViewModel.m in Sources */,
+				361EC5A51DBDFD7F0064FB18 /* YDEmojiKeyboardView.m in Sources */,
+				361EC5A01DBDE5870064FB18 /* UIImage+Bundle.m in Sources */,
+				362EE2A61DC74C6B00081B54 /* YDTextMessage.m in Sources */,
+				362EE29C1DC6DEED00081B54 /* YDMessageCell.m in Sources */,
+				3649662E1DC1917400E699CC /* YDAudioPressShortView.m in Sources */,
+				36C807BB1DC83C1200D68BC3 /* UIViewController+Authorization.m in Sources */,
+				36331D0D1DC0B6E3009B3AC4 /* YDCancelSendView.m in Sources */,
+				36331D0A1DC0A5F9009B3AC4 /* YDRecordingView.m in Sources */,
+				361EC5B11DBE1D2B0064FB18 /* YDChatPlusView.m in Sources */,
+				361EC59B1DBDE3AF0064FB18 /* YDChatBottomToolView.m in Sources */,
+				361EC58A1DBDE37D0064FB18 /* YDChatBaseViewController.m in Sources */,
+				362EE2991DC6DECE00081B54 /* YDTextMessageCell.m in Sources */,
+				361EC5871DBDE37D0064FB18 /* AppDelegate.m in Sources */,
+				361EC5AB1DBDFE8D0064FB18 /* UIColor+Hex.m in Sources */,
+				36331D041DC0A281009B3AC4 /* MBProgressHUD.m in Sources */,
+				36912FCD1DBF5D3200797451 /* UIImage+Color.m in Sources */,
+				362EE2A31DC71D3B00081B54 /* YDChatViewController.m in Sources */,
+				361EC5A81DBDFE480064FB18 /* YDEmojiKeyboardCell.m in Sources */,
+				361EC5841DBDE37D0064FB18 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		361EC58B1DBDE37D0064FB18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				361EC58C1DBDE37D0064FB18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		361EC5901DBDE37D0064FB18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				361EC5911DBDE37D0064FB18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		361EC5941DBDE37D0064FB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		361EC5951DBDE37D0064FB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		361EC5971DBDE37D0064FB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2792C0070125173AE8B81A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2YW229246G;
+				INFOPLIST_FILE = Chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yidu.Chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		361EC5981DBDE37D0064FB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8C79F1177E017DD484323F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2YW229246G;
+				INFOPLIST_FILE = Chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yidu.Chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		361EC57A1DBDE37D0064FB18 /* Build configuration list for PBXProject "Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				361EC5941DBDE37D0064FB18 /* Debug */,
+				361EC5951DBDE37D0064FB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		361EC5961DBDE37D0064FB18 /* Build configuration list for PBXNativeTarget "Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				361EC5971DBDE37D0064FB18 /* Debug */,
+				361EC5981DBDE37D0064FB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 361EC5771DBDE37D0064FB18 /* Project object */;
+}
