@@ -16,7 +16,6 @@
 		361EC59B1DBDE3AF0064FB18 /* YDChatBottomToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC59A1DBDE3AF0064FB18 /* YDChatBottomToolView.m */; };
 		361EC59D1DBDE3BE0064FB18 /* chat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 361EC59C1DBDE3BE0064FB18 /* chat.bundle */; };
 		361EC5A01DBDE5870064FB18 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC59F1DBDE5870064FB18 /* UIImage+Bundle.m */; };
-		361EC5A21DBDFCB60064FB18 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 361EC5A11DBDFCB60064FB18 /* emoji.plist */; };
 		361EC5A51DBDFD7F0064FB18 /* YDEmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */; };
 		361EC5A81DBDFE480064FB18 /* YDEmojiKeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5A71DBDFE480064FB18 /* YDEmojiKeyboardCell.m */; };
 		361EC5AB1DBDFE8D0064FB18 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EC5AA1DBDFE8D0064FB18 /* UIColor+Hex.m */; };
@@ -39,6 +38,7 @@
 		36912FCD1DBF5D3200797451 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 36912FCC1DBF5D3200797451 /* UIImage+Color.m */; };
 		36C807BB1DC83C1200D68BC3 /* UIViewController+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */; };
 		36C807BF1DC8672A00D68BC3 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36C807BE1DC8672A00D68BC3 /* emotion.plist */; };
+		36C807C21DC86B2A00D68BC3 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C807C11DC86B2A00D68BC3 /* NSString+Emoji.m */; };
 		B13FDFC5209E4D0523373138 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D686D7E9CF60BED953363FAF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,6 @@
 		361EC59C1DBDE3BE0064FB18 /* chat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = chat.bundle; sourceTree = "<group>"; };
 		361EC59E1DBDE5870064FB18 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
 		361EC59F1DBDE5870064FB18 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
-		361EC5A11DBDFCB60064FB18 /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
 		361EC5A31DBDFD7F0064FB18 /* YDEmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDEmojiKeyboardView.h; sourceTree = "<group>"; };
 		361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YDEmojiKeyboardView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		361EC5A61DBDFE480064FB18 /* YDEmojiKeyboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDEmojiKeyboardCell.h; sourceTree = "<group>"; };
@@ -99,6 +98,8 @@
 		36C807B91DC83C1200D68BC3 /* UIViewController+Authorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Authorization.h"; sourceTree = "<group>"; };
 		36C807BA1DC83C1200D68BC3 /* UIViewController+Authorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Authorization.m"; sourceTree = "<group>"; };
 		36C807BE1DC8672A00D68BC3 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
+		36C807C01DC86B2A00D68BC3 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		36C807C11DC86B2A00D68BC3 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		7B2792C0070125173AE8B81A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D8C79F1177E017DD484323F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D686D7E9CF60BED953363FAF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +158,8 @@
 				3649662D1DC1917400E699CC /* YDAudioPressShortView.m */,
 				36331D051DC0A2DD009B3AC4 /* UIView+HUD.h */,
 				36331D061DC0A2DD009B3AC4 /* UIView+HUD.m */,
+				36C807C01DC86B2A00D68BC3 /* NSString+Emoji.h */,
+				36C807C11DC86B2A00D68BC3 /* NSString+Emoji.m */,
 				361EC5A31DBDFD7F0064FB18 /* YDEmojiKeyboardView.h */,
 				361EC5A41DBDFD7F0064FB18 /* YDEmojiKeyboardView.m */,
 				361EC5A61DBDFE480064FB18 /* YDEmojiKeyboardCell.h */,
@@ -178,7 +181,6 @@
 				361EC5AA1DBDFE8D0064FB18 /* UIColor+Hex.m */,
 				36912FC71DBF56B600797451 /* chat_delete@2x.png */,
 				36912FC81DBF56B600797451 /* chat_delete@3x.png */,
-				361EC5A11DBDFCB60064FB18 /* emoji.plist */,
 				36C807BE1DC8672A00D68BC3 /* emotion.plist */,
 				361EC59C1DBDE3BE0064FB18 /* chat.bundle */,
 				361EC58B1DBDE37D0064FB18 /* Main.storyboard */,
@@ -308,7 +310,6 @@
 				36912FCA1DBF56B600797451 /* chat_delete@3x.png in Resources */,
 				36912FC91DBF56B600797451 /* chat_delete@2x.png in Resources */,
 				361EC59D1DBDE3BE0064FB18 /* chat.bundle in Resources */,
-				361EC5A21DBDFCB60064FB18 /* emoji.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +373,7 @@
 				36912FC01DBEF43200797451 /* YDPlusViewModel.m in Sources */,
 				361EC5A51DBDFD7F0064FB18 /* YDEmojiKeyboardView.m in Sources */,
 				361EC5A01DBDE5870064FB18 /* UIImage+Bundle.m in Sources */,
+				36C807C21DC86B2A00D68BC3 /* NSString+Emoji.m in Sources */,
 				362EE2A61DC74C6B00081B54 /* YDTextMessage.m in Sources */,
 				362EE29C1DC6DEED00081B54 /* YDMessageCell.m in Sources */,
 				3649662E1DC1917400E699CC /* YDAudioPressShortView.m in Sources */,

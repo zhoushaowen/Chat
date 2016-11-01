@@ -10,6 +10,7 @@
 #import "YDEmojiKeyboardCell.h"
 #import "UIColor+Hex.h"
 #import "UIView+SWAutoLayout.h"
+#import "NSString+Emoji.h"
 
 extern CGFloat YDKeyboardHeight;
 
@@ -94,15 +95,14 @@ extern CGFloat YDKeyboardHeight;
 
 - (void)loadEmoji
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"emoji.plist" ofType:nil];
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"emotion.plist" ofType:nil];
-//    NSArray *arr = [NSArray arrayWithContentsOfFile:path];
-//    NSMutableArray *mutableArr = [NSMutableArray arrayWithCapacity:0];
-//    [arr enumerateObjectsUsingBlock:^(NSDictionary*  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        [mutableArr addObject:obj[@"code"]];
-//    }];
-//    _array = mutableArr;
-    _array = [NSArray arrayWithContentsOfFile:path];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"emotion.plist" ofType:nil];
+    NSArray *arr = [NSArray arrayWithContentsOfFile:path];
+    NSMutableArray *mutableArr = [NSMutableArray arrayWithCapacity:0];
+    [arr enumerateObjectsUsingBlock:^(NSDictionary*  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *emoji = [NSString emojiWithHexString:obj[@"code"]];
+        [mutableArr addObject:emoji];
+    }];
+    _array = mutableArr;
     [_collectionView reloadData];
     _pageControl.numberOfPages = [_collectionView numberOfSections];
 }
